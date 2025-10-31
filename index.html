@@ -3,34 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zikirmatik - Sefa Şimşek</title>
+  <title>SF Games | Mobil Uygulama Geliştiricisi</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Poppins", Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #e2e8f0;
+      margin: 0;
+      padding: 0;
       text-align: center;
-      background: #f0f0f0;
-      color: #333;
-      padding: 40px;
     }
-    h1 { color: #007BFF; }
-    a {
+    header {
+      padding: 60px 20px 40px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 1.2rem;
+      color: #94a3b8;
+      margin-bottom: 30px;
+    }
+    .apps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background: #1e293b;
+      border-radius: 15px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+    .card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 20%;
+      margin-bottom: 15px;
+    }
+    .card h3 {
+      margin: 10px 0;
+      color: #f8fafc;
+    }
+    .card p {
+      font-size: 0.9rem;
+      color: #cbd5e1;
+      min-height: 40px;
+    }
+    .card a {
       display: inline-block;
-      margin-top: 20px;
-      background: #007BFF;
-      color: white;
-      padding: 10px 20px;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: #38bdf8;
+      color: #0f172a;
       text-decoration: none;
       border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.3s ease;
     }
-    a:hover { background: #0056b3; }
+    .card a:hover {
+      background: #0ea5e9;
+    }
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
   </style>
 </head>
 <body>
-  <h1>🤲 Zikirmatik</h1>
-  <p>Android için sade ve etkili bir zikir uygulaması.</p>
-  <a href="https://play.google.com/store/apps/details?id=com.studiosf.dhikrmatik" target="_blank">
-    Google Play'de Gör
-  </a>
+  <header>
+    <h1>SF Games</h1>
+    <h2>Mobil uygulamalar ve oyunlar geliştiriyoruz</h2>
+  </header>
+
+  <section class="apps">
+    <div class="card">
+      <img src="https://play-lh.googleusercontent.com/eTpw0UtQTG8slrL9S7wVixebQXZ3uRt86gM3k_lfP03TiHTZmfq50eTdfVLj8w1uGg=w480-h960" alt="Zikirmatik">
+      <h3>Zikirmatik</h3>
+      <p>Sade, modern ve kullanışlı bir zikir uygulaması.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.studiosf.dhikrmatik" target="_blank">Google Play</a>
+    </div>
+
+    <!-- Yeni uygulama eklemek istersen buraya aynı formatta kart ekle -->
+  </section>
+
+  <footer>
+    © 2025 SF Games | Tüm hakları saklıdır.
+  </footer>
 </body>
 </html>
-
